@@ -1,1 +1,0 @@
-#>elite_mobs:mobs/elites/zombies/spawn
