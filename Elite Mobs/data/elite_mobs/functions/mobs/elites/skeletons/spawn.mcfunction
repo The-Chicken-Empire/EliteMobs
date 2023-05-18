@@ -1,0 +1,1 @@
+#>elite_mobs:mobs/elites/skeletons/spawn
