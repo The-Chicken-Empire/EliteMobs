@@ -2,3 +2,4 @@
 
 scoreboard objectives add EM_ignition_time dummy
 scoreboard objectives add EM_blowup_time_left dummy
+scoreboard objectives add EM_riding_delay dummy
