@@ -1,4 +1,4 @@
-#>elite_mobs:systems/rng/generate
+#>elite_mobs:systems/rng
 #@input score #EM_rng_max rng (output is less than this value) (default 100)
 #@output score #EM_rng rng
 
