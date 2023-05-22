@@ -4,6 +4,7 @@
 execute if entity @s[type=zombie] run function elite_mobs:mobs/elites/zombies/spawn
 execute if entity @s[type=skeleton] run function elite_mobs:mobs/elites/skeletons/spawn
 execute if entity @s[type=creeper] run function elite_mobs:mobs/elites/creepers/spawn
+execute if entity @s[type=chicken] run function elite_mobs:mobs/elites/chickens/spawn
 function elite_mobs:mobs/elites/all/spawn
 #function elite_mobs:mobs/elites/samples/spawn
 tag @s[tag=!EM_became_elite] add EM_drawn
