@@ -6,12 +6,12 @@ execute positioned ^ ^ ^0.8 positioned ~-1 ~-0.5 ~-1 store result score #nkkn.co
 execute positioned ^ ^ ^0.8 positioned ~-1 ~-0.5 ~-1 store result entity @e[type=arrow,dx=1,dy=1.5,dz=1,nbt={PierceLevel:0b,inGround:0b},limit=1] Motion[0] double 0.001 run scoreboard players get #nkkn.counter EM_counter 
 execute positioned ^ ^ ^0.8 positioned ~-1 ~-0.5 ~-1 store result entity @e[type=arrow,dx=1,dy=1.5,dz=1,nbt={PierceLevel:0b,inGround:0b},limit=1] Motion[1] double 0.001 run scoreboard players get #nkkn.counter EM_counter2 
 execute positioned ^ ^ ^0.8 positioned ~-1 ~-0.5 ~-1 store result entity @e[type=arrow,dx=1,dy=1.5,dz=1,nbt={PierceLevel:0b,inGround:0b},limit=1] Motion[2] double 0.001 run scoreboard players get #nkkn.counter EM_counter3 
-scoreboard players set @s EM_shield_time 5
+scoreboard players set @s EM_shield_time 100
 playsound item.shield.block master @a ~ ~ ~ 1 1 1
-execute store result score #nkkn.counter EM_counter4 run data get entity @s HandItems.[{id:"minecraft:shield"}].tag.Damage
-scoreboard players add #nkkn.counter EM_counter4 1
-execute if score #nkkn.counter EM_counter4 matches 336.. run data modify entity @s HandItems.[{id:"minecraft:shield"}] set value {}
-execute if score #nkkn.counter EM_counter4 matches 336.. run tag @s remove EM_shield
-execute if score #nkkn.counter EM_counter4 matches 336.. run playsound item.shield.break master @a ~ ~ ~ 1 1 1
-execute if score #nkkn.counter EM_counter4 matches ..335 store result entity @s HandItems.[{id:"minecraft:shield"}].tag.Damage int 1 run scoreboard players get #nkkn.counter EM_counter4
+execute store result score #nkkn.counter EM_counter4 run data get entity @s HandItems.[{id:"minecraft:shield"}].tag.EM_shieldhealth
+scoreboard players remove #nkkn.counter EM_counter4 1
+execute if score #nkkn.counter EM_counter4 matches 0 run data modify entity @s HandItems.[{id:"minecraft:shield"}] set value {}
+execute if score #nkkn.counter EM_counter4 matches 0 run tag @s remove EM_shield
+execute if score #nkkn.counter EM_counter4 matches 0 run playsound item.shield.break master @a ~ ~ ~ 1 1 1
+execute if score #nkkn.counter EM_counter4 matches 1.. store result entity @s HandItems.[{id:"minecraft:shield"}].tag.EM_shieldhealth int 1 run scoreboard players get #nkkn.counter EM_counter4
 scoreboard players reset #nkkn.counter
