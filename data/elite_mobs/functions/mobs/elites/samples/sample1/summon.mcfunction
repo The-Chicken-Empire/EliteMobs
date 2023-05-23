@@ -3,3 +3,5 @@
 #"EM_drawn"はレアモブ出現抽選済みを表すタグ
 
 summon armor_stand ~ ~ ~ {Glowing:1b,Tags:["EM_sample","EM_drawn"]}
+
+#"EM_upwithblock"タグをつけるとブロックを積み上げてプレイヤーを追跡することができる。またその過程で頭上にブロックがあった場合無条件で破壊する。
