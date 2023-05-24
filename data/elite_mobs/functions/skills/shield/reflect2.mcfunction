@@ -6,7 +6,7 @@ execute positioned ^ ^ ^0.8 positioned ~-1 ~-0.5 ~-1 store result score #nkkn.co
 execute positioned ^ ^ ^0.8 positioned ~-1 ~-0.5 ~-1 store result entity @e[type=arrow,dx=1,dy=1.5,dz=1,nbt={PierceLevel:0b,inGround:0b},limit=1] Motion[0] double 0.001 run scoreboard players get #nkkn.counter EM_counter 
 execute positioned ^ ^ ^0.8 positioned ~-1 ~-0.5 ~-1 store result entity @e[type=arrow,dx=1,dy=1.5,dz=1,nbt={PierceLevel:0b,inGround:0b},limit=1] Motion[1] double 0.001 run scoreboard players get #nkkn.counter EM_counter2 
 execute positioned ^ ^ ^0.8 positioned ~-1 ~-0.5 ~-1 store result entity @e[type=arrow,dx=1,dy=1.5,dz=1,nbt={PierceLevel:0b,inGround:0b},limit=1] Motion[2] double 0.001 run scoreboard players get #nkkn.counter EM_counter3 
-scoreboard players set @s EM_shield_time 100
+scoreboard players set @s EM_shield_time 60
 playsound item.shield.block master @a ~ ~ ~ 1 1 1
 execute store result score #nkkn.counter EM_counter4 run data get entity @s HandItems.[{id:"minecraft:shield"}].tag.EM_shieldhealth
 scoreboard players remove #nkkn.counter EM_counter4 1
