@@ -1,0 +1,34 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow",
+            "functions": [
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "name": "",
+                    "amount": 0.15,
+                    "operation": "addition",
+                    "slot": "mainhand"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                    "enchantments":{
+                      "minecraft:power":3
+                    },
+                    "add":true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
