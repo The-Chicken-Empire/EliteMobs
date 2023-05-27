@@ -1,3 +1,10 @@
 #>elite_mobs:mobs/elites/skeletons/allrounder/summon
 
-summon skeleton ~ ~ ~ {HandItems:[{id:"minecraft:bow",Count:1b,tag:{Damage:20,AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:3,Operation:1,UUID:[I;-511208398,1810383266,4124119,-1412142]}],Enchantments:[{id:"minecraft:power",lvl:3s}]}},{id:"minecraft:shield",tag:{EM_shieldhealth:20},Count:1b}],Glowing:1b,Health:50f,Tags:["EM_shield","EM_upwithblock","EM_drawn","EM_elite","EM_allrounder"],Attributes:[{Name:"generic.max_health",Base:50},{Name:"generic.movement_speed",Base:0.2}]}
+summon skeleton ~ ~ ~ {CustomName:'{"text":"ゼネラリストスケルトン","color":"dark_red"}',HandDropChances:[0.0f,0.0f],ArmorDropChances:[0.0f,0.0f,0.02f,0.02f],Glowing:1b,Health:50f,Tags:["EM_allrounder_bow","init","EM_shield","EM_upwithblock","EM_drawn","EM_elite","EM_allrounder"],Attributes:[{Name:"generic.max_health",Base:50},{Name:"generic.movement_speed",Base:0.4},{Name:"generic.knockback_resistance",Base:0.5}]}
+loot replace entity @e[tag=init] weapon.mainhand loot elite_mobs:entities/elites/skeletons/allrounder/bow
+loot replace entity @e[tag=init] weapon.offhand loot elite_mobs:entities/elites/skeletons/allrounder/shield
+loot replace entity @e[tag=init] armor.head loot elite_mobs:entities/elites/skeletons/allrounder/helmet
+loot replace entity @e[tag=init] armor.chest loot elite_mobs:entities/elites/skeletons/allrounder/chestplate
+loot replace entity @e[tag=init] armor.legs loot elite_mobs:entities/elites/skeletons/allrounder/leggings
+loot replace entity @e[tag=init] armor.feet loot elite_mobs:entities/elites/skeletons/allrounder/boots
+tag @e[tag=init] remove init
