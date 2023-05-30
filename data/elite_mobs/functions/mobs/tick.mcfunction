@@ -2,5 +2,4 @@
 
 function elite_mobs:mobs/elites/creepers/matryoshka/tick
 function elite_mobs:mobs/elites/creepers/yokusiryoku/tick
-function elite_mobs:mobs/elites/chickens/niwaniwa08/tick
-function elite_mobs:mobs/elites/zombies/jack/tick
+execute as @e[type=zombie,tag=EM_jack] run function elite_mobs:mobs/elites/zombies/jack/tick
