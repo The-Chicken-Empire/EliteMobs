@@ -1,0 +1,1 @@
+#>elite_mobs:mobs/elites/phantoms/personify/personify/vex/tick

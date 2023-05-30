@@ -223,6 +223,10 @@
         "cherry_pressure_plate",
         "bamboo_button",
         "cherry_button",
-        "pink_petals"
+        "pink_petals",
+        "bedrock",
+        "command_block",
+        "chain_command_block",
+        "repeating_command_block"
     ]
 }

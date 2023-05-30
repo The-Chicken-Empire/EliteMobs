@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:player_head",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{SkullOwner:{Id:[I;-1860878747,741756039,-1924231238,740770117],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGRiYWMxMDY2YzY2NmZlMTcwNzJiNGFhM2M4NDUxZTU2YzkzNWNiY2IyZmZiYjJiN2IxMjJkNDI2OGVhOWY1MCJ9fX0=\"}]}}} "
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

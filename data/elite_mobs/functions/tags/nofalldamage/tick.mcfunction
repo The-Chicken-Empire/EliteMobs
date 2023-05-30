@@ -1,0 +1,4 @@
+execute if entity @e[tag=EM_nofalldamage,nbt={OnGround:0b},limit=1] run scoreboard players add @e[tag=EM_nofalldamage,nbt={OnGround:0b}] EM_nofalldamage 1
+execute if entity @e[tag=EM_nofalldamage,nbt={OnGround:0b},scores={EM_nofalldamage=3..},limit=1] as @e[tag=EM_nofalldamage,nbt={OnGround:0b},scores={EM_nofalldamage=3..}] at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:28b,Amplifier:0b,Duration:2,ShowParticles:0b}]}
+scoreboard players reset @e[scores={EM_nofalldamage=3..}] EM_nofalldamage
+scoreboard players reset @e[tag=EM_nofalldamage,nbt={OnGround:1b},scores={EM_nofalldamage=1..}] EM_nofalldamage
