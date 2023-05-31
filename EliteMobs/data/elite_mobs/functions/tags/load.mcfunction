@@ -16,3 +16,8 @@ scoreboard objectives add EM_counter10 dummy
 scoreboard objectives add EM_upwithblock_time dummy
 scoreboard objectives add EM_shield_time dummy
 scoreboard objectives add EM_nofalldamage dummy
+
+bossbar add em_personify {"text":"アンジェラ","color":"blue"}
+bossbar set em_personify max 300
+bossbar set em_personify visible false
+bossbar set em_personify color blue

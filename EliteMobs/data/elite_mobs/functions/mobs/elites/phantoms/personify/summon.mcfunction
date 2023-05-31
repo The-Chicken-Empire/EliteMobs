@@ -4,3 +4,4 @@ summon phantom ~ ~ ~ {Glowing:1b,Tags:["EM_personify","EM_personify_phantom","EM
 
 
 
+bossbar set em_personify visible true
