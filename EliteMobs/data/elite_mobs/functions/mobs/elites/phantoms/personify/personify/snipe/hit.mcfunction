@@ -6,5 +6,5 @@ summon lightning_bolt ~ ~ ~ {CustomName:'{"text":"アンジェラの弾丸","col
 
 
 
-
+#
 kill
