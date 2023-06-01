@@ -1,0 +1,9 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:riptide": 8
+    },
+    "add": true
+  }
+]

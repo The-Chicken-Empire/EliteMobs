@@ -1,0 +1,9 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:fire_protection": 2048
+    },
+    "add": true
+  }
+]

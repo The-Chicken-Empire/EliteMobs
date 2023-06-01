@@ -1,0 +1,1 @@
+give @s leather_chestplate 1

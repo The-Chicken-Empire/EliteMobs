@@ -1,0 +1,1 @@
+give @s diamond_leggings 1

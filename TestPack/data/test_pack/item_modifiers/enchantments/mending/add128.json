@@ -1,0 +1,9 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:mending": 128
+    },
+    "add": true
+  }
+]

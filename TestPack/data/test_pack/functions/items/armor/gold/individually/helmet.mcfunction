@@ -1,0 +1,1 @@
+give @s golden_helmet 1

@@ -1,0 +1,9 @@
+[
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:lure": 8192
+    },
+    "add": true
+  }
+]
