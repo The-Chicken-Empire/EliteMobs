@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:channeling": 32
-    },
-    "add": true
-  }
-]

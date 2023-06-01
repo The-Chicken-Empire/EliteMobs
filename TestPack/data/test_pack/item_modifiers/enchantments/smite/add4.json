@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:smite": 4
-    },
-    "add": true
-  }
-]

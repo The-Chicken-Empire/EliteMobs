@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:fortune": 8192
-    },
-    "add": true
-  }
-]

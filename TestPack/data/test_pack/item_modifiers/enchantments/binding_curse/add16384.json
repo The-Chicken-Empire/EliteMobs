@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:binding_curse": 16384
-    },
-    "add": true
-  }
-]

@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:loyalty": 16384
-    },
-    "add": true
-  }
-]

@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:blast_protection": 16384
-    },
-    "add": true
-  }
-]

@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:feather_falling": 128
-    },
-    "add": true
-  }
-]

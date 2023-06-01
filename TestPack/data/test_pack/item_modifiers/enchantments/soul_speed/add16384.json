@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:soul_speed": 16384
-    },
-    "add": true
-  }
-]

@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:quick_charge": 128
-    },
-    "add": true
-  }
-]

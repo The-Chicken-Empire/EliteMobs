@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:vanishing_curse": 32
-    },
-    "add": true
-  }
-]

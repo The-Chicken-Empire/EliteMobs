@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:luck_of_the_sea": 2048
-    },
-    "add": true
-  }
-]

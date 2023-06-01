@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:bane_of_arthropods": 4096
-    },
-    "add": true
-  }
-]

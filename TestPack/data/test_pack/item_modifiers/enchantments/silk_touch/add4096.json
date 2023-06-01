@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:silk_touch": 4096
-    },
-    "add": true
-  }
-]

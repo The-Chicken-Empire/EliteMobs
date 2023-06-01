@@ -1,9 +1,0 @@
-[
-  {
-    "function": "minecraft:set_enchantments",
-    "enchantments": {
-      "minecraft:binding_curse": 3
-    },
-    "add": false
-  }
-]
