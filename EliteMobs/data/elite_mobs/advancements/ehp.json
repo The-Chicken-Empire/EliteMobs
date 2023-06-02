@@ -386,5 +386,8 @@
 					"15-0",
 					"15-1"
 			]
-	]
+	],
+	"rewards": {
+		"function": "elite_mobs:systems/detect_attacking/detect"
+	}
 }
