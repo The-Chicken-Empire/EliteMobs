@@ -1,1 +1,0 @@
-#>elite_mobs:skills/tick

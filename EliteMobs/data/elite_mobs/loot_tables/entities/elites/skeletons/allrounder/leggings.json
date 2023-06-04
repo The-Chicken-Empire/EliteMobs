@@ -1,0 +1,49 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chainmail_leggings",
+            "functions": [
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.max_health",
+                    "name": "",
+                    "amount": 2,
+                    "operation": "addition",
+                    "slot": "legs"
+                  },
+                  {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "name": "",
+                    "amount": 0.05,
+                    "operation": "multiply_total",
+                    "slot": "legs"
+                  },
+                  {
+                    "attribute": "minecraft:generic.attack_speed",
+                    "name": "",
+                    "amount": 0.05,
+                    "operation": "multiply_total",
+                    "slot": "legs"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:protection": 3
+                },
+                "add": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
