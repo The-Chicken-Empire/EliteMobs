@@ -1,4 +1,5 @@
 #>elite_mobs:skills/smokebomb/tick
+# @within elite_mobs:skills/tick
 
 scoreboard players add @s EM_smokebomb_counter 1
 scoreboard players operation #EM_smokebomb tmp = @s EM_smokebomb_counter

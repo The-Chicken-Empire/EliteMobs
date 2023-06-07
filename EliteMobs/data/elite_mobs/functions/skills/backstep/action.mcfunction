@@ -1,4 +1,6 @@
 #>elite_mobs:skills/backstep/action
+#
+# @within elite_mobs:*
 
 execute as @s at @s run summon area_effect_cloud ~ ~ ~ {Tags:["EM_backstep"]}
 data modify entity @e[tag=EM_backstep,limit=1] Rotation[0] set from entity @s Rotation[0]

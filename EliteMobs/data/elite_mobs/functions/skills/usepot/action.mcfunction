@@ -1,4 +1,5 @@
 #>elite_mobs:skills/usepot/action
+# @within elite_mobs:*
 
 scoreboard players add @s EM_usepot_counter 1
 scoreboard players operation #usepot tmp = @s EM_usepot_counter

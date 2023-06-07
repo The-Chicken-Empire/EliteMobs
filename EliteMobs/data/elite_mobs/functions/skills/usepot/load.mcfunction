@@ -1,8 +1,14 @@
 #>elite_mobs:skills/usepot/load
+#
+# @within elite_mobs:skills/load
 
-#ポーションのサウンドを鳴らすタイミングを調整するためのスコア
+#>
+# ポーションのサウンドを鳴らすタイミングを調整するためのスコア
+# @within elite_mobs:skills/usepot/*
 scoreboard objectives add EM_usepot_counter dummy
-#そのモブが飲むポーションの種類を指定するためのスコア
+#>
+#	そのモブが飲むポーションの種類を指定するためのスコア
+# @within elite_mobs:*
 scoreboard objectives add EM_usepot_types dummy
 
 #potの効果の内容と番号をまとめたstorageを作成する

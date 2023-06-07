@@ -1,4 +1,6 @@
 #>elite_mobs:skills/usepot/apply
+#
+# @within elite_mobs:skills/usepot/*
 
 function elite_mobs:skills/usepot/search
 execute unless data entity @s ActiveEffects run tag @s add EM_usepot_noeffect

@@ -1,4 +1,6 @@
 #>elite_mobs:mobs/elites/creepers/matryoshka/spawn
+#
+# @within elite_mobs:mobs/elites/creepers/matoryoshka/*
 
 scoreboard players set #EM_rng_max EM_rng 500
 function elite_mobs:systems/rng

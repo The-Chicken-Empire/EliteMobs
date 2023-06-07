@@ -1,4 +1,6 @@
 #>elite_mobs:skills/usepot/search
+#
+# @within elite_mobs:skills/usepot/*
 
 #線形探索により、モブが持っているEM_usepot_typesスコアと一致するidのポーションを探す
 execute store result score #usepot tmp run data get storage elite_mobs:skills usepot[0].id

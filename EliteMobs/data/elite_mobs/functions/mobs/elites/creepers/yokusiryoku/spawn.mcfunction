@@ -1,4 +1,6 @@
 #>elite_mobs:mobs/elites/creepers/yokusiryoku/spawn
+#
+# @within elite_mobs:mobs/elites/creepers/yokusiryoku/*
 
 scoreboard players set #EM_rng_max EM_rng 1000
 function elite_mobs:systems/rng

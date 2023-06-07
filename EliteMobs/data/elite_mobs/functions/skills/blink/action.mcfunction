@@ -1,4 +1,6 @@
 #>elite_mobs:skills/blink/action
+#
+# @within elite_mobs:*
 
 execute as @s at @s run summon area_effect_cloud ~ ~ ~ {Tags:["EM_blink"]}
 data modify entity @e[tag=EM_blink,limit=1] Rotation[0] set from entity @s Rotation[0]
