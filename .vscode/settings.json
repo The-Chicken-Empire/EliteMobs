@@ -10,21 +10,77 @@
     "datapack.env.jsonVersion": "1.19.4",
     "datapack.env.permissionLevel": 2,
     "datapack.features.semanticColoring": false,
-    "datapack.lint.blockStateBracketSpacing": {
-        "inside": 0
+    "datapack.snippets": {
+        "forwardSpreadLib": "#> SpreadLib\n# @private\n#declare tag SpreadMarker\n\n# 拡散させるEntityを召喚する\n    summon marker ~ ~ ~ {Tags:[\"SpreadMarker\"]}\n# ステータス設定\n    data modify storage lib: Argument.Distance set value ${1:<distance>}\n    data modify storage lib: Argument.Spread set value ${2:<spread>}\n# 拡散\n    execute as @e[type=marker,tag=SpreadMarker,limit=1] ${3:}run function lib:forward_spreader/${4:<circle|square>}\n# 拡散\n    execute facing entity @e[type=marker,tag=SpreadMarker,limit=1] ${5:feet anchored eyes positioned ^ ^ ^ }run ${6:<command>}\n# リセット\n    kill @e[type=marker,tag=SpreadMarker]"
     },
-    "datapack.lint.blockStateCommaSpacing": {
-        "before": 0,
-        "after": 0
+    "mcdutil.createFile.fileTemplate": {
+        "function": [
+            "#> %fileResourcePath%",
+            "#",
+            "# %cursor%",
+            "#",
+            "# @within %nowOpenFileType% %nowOpenFileResourcePath%"
+        ],
+        "advancement": [
+            "{",
+            "    \"criteria\": {",
+            "        \"trigger\": {",
+            "            \"trigger\": \"%cursor%\"",
+            "        }",
+            "    }",
+            "}"
+        ],
+        "predicate": [
+            "{",
+            "    \"condition\": \"%cursor%\"",
+            "}"
+        ],
+        "tag/block": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/entity_type": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/fluid": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/function": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/item": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ]
     },
-    "datapack.lint.blockStateEqualSpacing": {
-        "before": 0,
-        "after": 0
+    "mcdutil.createDatapackTemplate.defaultFolder": false,
+    "mcdutil.createDatapackTemplate.defaultLoadAndTick": false,
+    "mcdutil.createDatapackTemplate.defaultVanillaData": false,
+    "files.exclude": {
+        ".idea": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "desktop.ini": true
     },
-    "datapack.lint.blockStateSortKeys": null,
-    "datapack.lint.blockStateTrailingComma": false,
-    "datapack.lint.eol": "LF",
-    "datapack.lint.idOmitDefaultNamespace": null,
     "files.eol": "\n",
     "githubIssues.ignoreUserCompletionTrigger": [
         "mcfunction"
@@ -32,4 +88,24 @@
     "git.branchProtection": [
         "main"
     ],
+    "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
+    "gitmoji.addCustomEmoji": [
+        {
+            "code": ":balance_scale:",
+            "emoji": "⚖️",
+            "description": "Corrections regarding balance adjustment",
+            "description_zh_cn": ""
+        }
+    ],
+    "git-graph.customEmojiShortcodeMappings": [
+        {
+            "shortcode": ":technologist:",
+            "emoji": "🧑‍💻"
+
+        },
+        {
+            "shortcode": ":balance_scale:",
+            "emoji": "⚖️"
+        }
+    ]
 }
