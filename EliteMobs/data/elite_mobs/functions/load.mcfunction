@@ -1,6 +1,9 @@
 #>elite_mobs:load
 #
 
+
+forceload add 0 0
+
 scoreboard objectives add constant dummy
 scoreboard objectives add tmp dummy
 scoreboard players set #-1 constant -1
