@@ -1,0 +1,3 @@
+#>elite_mobs:mobs/elites/spiders/kimoino/summon
+
+summon cave_spider ~ ~ ~ {CustomNameVisible:1b,Health:20f,Tags:["EM_elite","EM_kimoino"],Passengers:[{id:"minecraft:creeper",Health:5f,ExplosionRadius:5b,Fuse:30,Tags:["EM_elite","EM_iyahhoi"],CustomName:'{"text":"いやっほーい"}',Attributes:[{Name:generic.max_health,Base:5}]}],CustomName:'{"text":"きもいの"}',Attributes:[{Name:generic.max_health,Base:20},{Name:generic.movement_speed,Base:0.7},{Name:generic.attack_damage,Base:3}]}
