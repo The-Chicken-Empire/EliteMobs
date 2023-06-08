@@ -1,7 +1,7 @@
 #>elite_mobs:mobs/elites/zombies/jack/jack_passive/40hp
 
 effect give @s strength 4 1 true
-particle falling_lava ~ ~2.4 ~ 0.2 0 0.2 0.02 3 normal
+particle falling_lava ~ ~2.4 ~ 0.2 0 0.2 0.02 1 normal
 scoreboard players add teleport jack_skill 1
 execute if score delay jack_skill matches 1 run function elite_mobs:mobs/elites/zombies/jack/jack_skills/delay/delay_40hp
 execute if entity @a[distance=15..40] if score lightning jack_skill matches 60 as @e[type=zombie,tag=EM_jack] run function elite_mobs:mobs/elites/zombies/jack/jack_skills/lightning/lightning
