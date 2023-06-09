@@ -1,0 +1,1 @@
+give @s netherite_boots 1

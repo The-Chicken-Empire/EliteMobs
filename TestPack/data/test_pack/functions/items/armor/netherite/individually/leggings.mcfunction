@@ -1,0 +1,1 @@
+give @s netherite_leggings 1

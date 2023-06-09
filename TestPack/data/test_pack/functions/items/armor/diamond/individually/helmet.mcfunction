@@ -1,0 +1,1 @@
+give @s diamond_helmet 1

@@ -1,0 +1,1 @@
+give @s diamond_chestplate 1
