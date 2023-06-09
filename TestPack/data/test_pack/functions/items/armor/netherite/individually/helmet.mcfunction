@@ -1,1 +1,0 @@
-give @s netherite_helmet 1

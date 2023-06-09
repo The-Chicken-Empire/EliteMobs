@@ -1,1 +1,0 @@
-give @s chainmail_chestplate 1

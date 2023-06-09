@@ -1,1 +1,0 @@
-give @s golden_chestplate 1

@@ -1,1 +1,0 @@
-give @s leather_boots 1

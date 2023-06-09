@@ -1,1 +1,0 @@
-give @s iron_leggings 1

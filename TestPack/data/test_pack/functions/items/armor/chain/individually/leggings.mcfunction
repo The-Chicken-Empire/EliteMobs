@@ -1,1 +1,0 @@
-give @s chainmail_leggings 1
