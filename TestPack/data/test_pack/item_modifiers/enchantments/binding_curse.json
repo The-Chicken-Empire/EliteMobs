@@ -5,7 +5,7 @@
       "minecraft:binding_curse": {
         "type": "minecraft:score",
         "target": "this",
-        "score": "TP_enchlvl"
+        "score": "TP"
       }
     }
   }

@@ -5,7 +5,7 @@
       "minecraft:luck_of_the_sea": {
         "type": "minecraft:score",
         "target": "this",
-        "score": "TP_enchlvl"
+        "score": "TP"
       }
     }
   }

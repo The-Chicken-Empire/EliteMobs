@@ -5,7 +5,7 @@
       "minecraft:soul_speed": {
         "type": "minecraft:score",
         "target": "this",
-        "score": "TP_enchlvl"
+        "score": "TP"
       }
     }
   }

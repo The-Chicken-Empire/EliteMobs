@@ -5,7 +5,7 @@
       "minecraft:bane_of_arthropods": {
         "type": "minecraft:score",
         "target": "this",
-        "score": "TP_enchlvl"
+        "score": "TP"
       }
     }
   }
