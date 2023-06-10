@@ -9,6 +9,7 @@ scoreboard objectives add TP dummy
 scoreboard players set #2 TP 2
 scoreboard players set #3 TP 3
 scoreboard players set #4 TP 4
+scoreboard players set #5 TP 5
 scoreboard players set #10 TP 10
 
 #ロッドのリーチを設定

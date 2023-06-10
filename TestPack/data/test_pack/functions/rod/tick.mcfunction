@@ -3,7 +3,12 @@
 # @within test_pack:tick
 
 # プレイヤの頭に操作記録エンティティを召喚
-execute at @s anchored eyes positioned ^ ^ ^ run summon interaction ~ ~-0.5 ~ {width:1f,height:1f,Tags:["TP_rod"]}
+execute at @s anchored eyes positioned ^ ^ ^ run summon interaction ~ ~-0.5 ~ {width:1.25f,height:1.25f,Tags:["TP_rod"]}
+execute at @s anchored eyes positioned ^ ^ ^ run summon interaction ~ ~-0.5 ~ {width:1.25f,height:1.25f,Tags:["TP_rod"]}
+execute at @s anchored eyes positioned ^ ^ ^ run summon interaction ~ ~-0.5 ~ {width:1.25f,height:1.25f,Tags:["TP_rod"]}
+execute at @s anchored eyes positioned ^ ^ ^ run summon interaction ~ ~-0.5 ~ {width:1.25f,height:1.25f,Tags:["TP_rod"]}
+execute at @s anchored eyes positioned ^ ^ ^ run summon interaction ~ ~-0.5 ~ {width:1.25f,height:1.25f,Tags:["TP_rod"]}
+
 
 # それぞれの操作に対する処理を行う
 execute if entity @s[tag=TP_interact,predicate=test_pack:sneaking] run function test_pack:rod/shift_right_click/run

@@ -6,4 +6,7 @@ execute unless score @s TP_rod_condition matches -2147483648..2147483647 run sco
 
 execute if score @s TP_rod_condition matches 0 run function test_pack:rod/right_click/pattern
 execute if score @s TP_rod_condition matches 1 run function test_pack:rod/right_click/material
-execute if score @s TP_rod_condition matches 2 run function test_pack:rod/right_click/enchid
+execute if score @s TP_rod_condition matches 2 run function test_pack:rod/right_click/color
+execute if score @s TP_rod_condition matches 3 run function test_pack:rod/right_click/itemid
+
+playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2 1
