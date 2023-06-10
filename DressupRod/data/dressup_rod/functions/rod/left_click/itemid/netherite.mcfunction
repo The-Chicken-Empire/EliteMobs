@@ -1,4 +1,4 @@
-#> dressup_rod:rod/left_click/itemid//netherite
+#> dressup_rod:rod/left_click/itemid/netherite
 #
 # dressup_rod:rod/left_click/itemid/*
 

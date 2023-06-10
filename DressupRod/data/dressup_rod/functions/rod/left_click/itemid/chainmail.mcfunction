@@ -1,4 +1,4 @@
-#> dressup_rod:rod/left_click/itemid//chainmail
+#> dressup_rod:rod/left_click/itemid/chainmail
 #
 # dressup_rod:rod/left_click/itemid/*
 

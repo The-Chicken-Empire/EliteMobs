@@ -1,4 +1,4 @@
-#> dressup_rod:rod/left_click/itemid//diamond
+#> dressup_rod:rod/left_click/itemid/diamond
 #
 # dressup_rod:rod/left_click/itemid/*
 

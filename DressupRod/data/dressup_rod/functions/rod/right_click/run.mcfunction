@@ -8,5 +8,6 @@ execute if score @s DR_rod_condition matches 0 run function dressup_rod:rod/righ
 execute if score @s DR_rod_condition matches 1 run function dressup_rod:rod/right_click/material
 execute if score @s DR_rod_condition matches 2 run function dressup_rod:rod/right_click/color
 execute if score @s DR_rod_condition matches 3 run function dressup_rod:rod/right_click/itemid
+execute if score @s DR_rod_condition matches 4 run function dressup_rod:rod/right_click/enchant
 
 playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2 1
