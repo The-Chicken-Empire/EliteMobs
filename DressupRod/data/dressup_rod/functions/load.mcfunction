@@ -5,6 +5,9 @@
 #プレイヤごとやモブごとに管理する必要がないものはこのスコアを利用
 scoreboard objectives add DR dummy
 
+#スニーク検知用スコア
+scoreboard objectives add DR_sneaking minecraft.custom:minecraft.sneak_time
+
 #定数
 scoreboard players set #2 DR 2
 scoreboard players set #3 DR 3

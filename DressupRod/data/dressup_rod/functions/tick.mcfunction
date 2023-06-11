@@ -20,3 +20,5 @@ execute as @a[nbt={SelectedItem:{tag:{DR:1}}}] run function dressup_rod:rod/tick
 execute as @e[tag=DR_glowing] unless entity @s[tag=DR_targeted] run data modify entity @s Glowing set value 0b
 execute as @e[tag=DR_glowing] unless entity @s[tag=DR_targeted] run tag @s remove DR_glowing
 
+# スニーク検知用スコアをリセット
+scoreboard players reset @a DR_sneaking
