@@ -1,4 +1,4 @@
-#> dressup_rod:rod/check_attacker
+#> dressup_rod:rod/check/check_attacker
 #
 # @within dressup_rod:*
 

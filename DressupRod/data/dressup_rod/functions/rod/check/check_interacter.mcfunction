@@ -1,4 +1,4 @@
-#> dressup_rod:rod/check_interacter
+#> dressup_rod:rod/check/check_interacter
 #
 # @within dressup_rod:*
 
