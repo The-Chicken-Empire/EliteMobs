@@ -15,12 +15,12 @@ data modify storage dressup_rod: players[0][0][0][0][0].undo prepend value {}
 execute store result storage dressup_rod: players[0][0][0][0][0].undo[0].ApplyTo int 1 run scoreboard players get @s DR_apply_to
 
 # ロッドがsaveモードであったならばストレージに対する変更であるので、ストレージ番号を保存しIsEntityを0に設定
-execute if score @s DR_rod_condition matches 6 store result storage dressup_rod: players[0][0][0][0][0].undo[0].Identifier int 1 run scoreboard players get @s DR_saves
-execute if score @s DR_rod_condition matches 6 run data modify storage dressup_rod: players[0][0][0][0][0].undo[0].IsEntity set value 0
+execute if score @s DR_rod_condition matches 5 store result storage dressup_rod: players[0][0][0][0][0].undo[0].Identifier int 1 run scoreboard players get @s DR_saves
+execute if score @s DR_rod_condition matches 5 run data modify storage dressup_rod: players[0][0][0][0][0].undo[0].IsEntity set value 0
 
 #それ以外のモードではエンティティに対する変更であるので、UUID[0]を保存し、IsEntityを1に設定
-execute unless score @s DR_rod_condition matches 6 store result storage dressup_rod: players[0][0][0][0][0].undo[0].Identifier int 1 run data get entity @e[tag=DR_target,limit=1] UUID[0]
-execute unless score @s DR_rod_condition matches 6 run data modify storage dressup_rod: players[0][0][0][0][0].undo[0].IsEntity set value 1
+execute unless score @s DR_rod_condition matches 5 store result storage dressup_rod: players[0][0][0][0][0].undo[0].Identifier int 1 run data get entity @e[tag=DR_target,limit=1] UUID[0]
+execute unless score @s DR_rod_condition matches 5 run data modify storage dressup_rod: players[0][0][0][0][0].undo[0].IsEntity set value 1
 
 # DR_undo_containerタグのついたarmor_standに変更前のデータが保存されているので、ArmorItemsのデータをストレージに保存
 data modify storage dressup_rod: players[0][0][0][0][0].undo[0].ArmorItems set from entity @e[tag=DR_undo_container,limit=1] ArmorItems
@@ -31,3 +31,6 @@ execute if score #max DR_history < #DR DR run data remove storage dressup_rod: p
 
 #スコアをリセット
 scoreboard players reset #DR DR
+
+#使用した防具立てをキル
+kill @e[tag=DR_undo_container]
