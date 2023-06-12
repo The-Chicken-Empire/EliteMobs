@@ -2,6 +2,9 @@
 #
 # @private
 
+# 初めてロッドを持ったプレイヤの初期化処理を行う
+execute as @a[tag=!DR_initialized] run function dressup_rod:rod/init
+
 # 右クリック左クリックを検知し、それが対象者の行動であるかをUUIDを用いて調べる
 execute as @e[tag=DR_rod] if data entity @s interaction run function dressup_rod:rod/check/check_interacter
 execute as @e[tag=DR_rod] if data entity @s attack run function dressup_rod:rod/check/check_attacker
@@ -29,6 +32,3 @@ execute as @e[tag=DR_glowing] unless entity @s[tag=DR_targeted] run tag @s remov
 
 # スニーク検知用スコアをリセット
 scoreboard players reset @a DR_sneaking
-
-# インベントリの変更検知用進捗をリセット
-advancement revoke @a only dressup_rod:inventory_change

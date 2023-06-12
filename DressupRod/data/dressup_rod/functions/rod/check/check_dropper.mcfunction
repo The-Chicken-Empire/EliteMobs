@@ -4,12 +4,9 @@
 
 
 execute store result score #DR DR run data get entity @s Thrower[0]
-execute at @s positioned ~ ~-1 ~ as @p[tag=DR_select_rod] store result score #DR_ DR run data get entity @s UUID[0]
+execute at @s as @a[tag=DR_select_rod,distance=..10] run function dressup_rod:rod/check/check_dropper_helper
 
-execute at @s positioned ~ ~-1 ~ as @p[tag=DR_select_rod] if score #DR DR = #DR_ DR run tag @s add DR_drop
-execute if score #DR DR = #DR_ DR run kill @s
+execute if entity @a[tag=DR_drop] run kill @s
 
-scoreboard players reset #DR DR
-scoreboard players reset #DR_ DR
 
 
