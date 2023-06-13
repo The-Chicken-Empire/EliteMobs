@@ -12,7 +12,7 @@ execute as @e[type=zombie,tag=!EM_elite,tag=!EM_monk_buffed,distance=..3] at @s 
 
 
 
-execute as @e[type=zombie,distance=..3,tag=!EM_elite,tag=!EM_monk_buffed] run function elite_mobs:mobs/elites/zombies/monk/buff/tag
+execute as @e[type=zombie,tag=!EM_elite,tag=!EM_monk_buffed,distance=..3] run function elite_mobs:mobs/elites/zombies/monk/buff/tag
 
 
 

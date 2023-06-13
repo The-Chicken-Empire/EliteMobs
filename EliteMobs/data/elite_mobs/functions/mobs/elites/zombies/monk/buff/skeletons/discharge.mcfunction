@@ -10,7 +10,7 @@ effect give @e[type=skeleton,tag=!EM_elite,tag=!EM_monk_buffed,distance=..3] fir
 execute as @e[type=skeleton,tag=!EM_elite,tag=!EM_monk_buffed,distance=..3] at @s run particle witch ~ ~1 ~ 0.2 0.2 0.2 0 100 normal @a
 
 
-execute as @e[type=skeleton,distance=..3,tag=!EM_elite,tag=!EM_monk_buffed] run function elite_mobs:mobs/elites/zombies/monk/buff/tag
+execute as @e[type=skeleton,tag=!EM_elite,tag=!EM_monk_buffed,distance=..3] run function elite_mobs:mobs/elites/zombies/monk/buff/tag
 
 
 
