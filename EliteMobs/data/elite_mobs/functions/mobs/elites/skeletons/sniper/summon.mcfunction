@@ -1,0 +1,5 @@
+#> elite_mobs:mobs/elites/skeletons/sniper/summon
+#
+# @within elite_mobs:mobs/elites/skeletons/sniper/*
+
+summon skeleton ~ ~ ~ {DeathLootTable:"elite_mob:empty",PersistenceRequired:1b,Health:50f,Tags:["EM_drawn","EM_sniper","EM_mobs_hasskill"],CustomName:'{"text":"魔弾の射手"}',HandItems:[{id:"minecraft:crossbow",Count:1b,tag:{Enchantments:[{}],AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-10000,Operation:0,UUID:[I;956803373,2119582227,-1916098205,-1903700930]}]}},{}],HandDropChances:[0.000F,0.000F],ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:7143260}}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;-1900795290,-1112191580,-1978621805,1661981070],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTU5ODY0ZmU1MTc5MGIxOGQ1MjZkNzFkMzE0NzdjMjI4N2U4NTFlYmVkNDlkM2NjM2E0NjY1Nzg0ZmIxMTczOCJ9fX0="}]}}}}],ArmorDropChances:[0.000F,0.000F,0.000F,0.000F],Attributes:[{Name:"generic.max_health",Base:50},{Name:"generic.movement_speed",Base:0}]}
