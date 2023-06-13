@@ -10,6 +10,155 @@
     "datapack.env.jsonVersion": "1.19.4",
     "datapack.env.permissionLevel": 2,
     "datapack.features.semanticColoring": false,
+    "datapack.lint.blockStateCommaSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.blockStateEqualSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.blockStateSortKeys": null,
+    "datapack.lint.blockStateTrailingComma": false,
+    "datapack.lint.eol": "LF",
+    "datapack.lint.idOmitDefaultNamespace": null,
+    "datapack.lint.nbtArrayBracketSpacing": {
+        "inside": 0
+    },
+    "datapack.lint.nbtArrayCommaSpacing": {
+        "before": 0,
+        "after": 1
+    },
+    "datapack.lint.nbtArrayLengthCheck": [
+        "warning",
+        true
+    ],
+    "datapack.lint.nbtArraySemicolonSpacing": {
+        "after": 1
+    },
+    "datapack.lint.nbtArrayTrailingComma": false,
+    "datapack.lint.nbtBoolean": [
+        "warning",
+        false
+    ],
+    "datapack.lint.nbtByteSuffix": "b",
+    "datapack.lint.nbtCompoundBracketSpacing": {
+        "inside": 0
+    },
+    "datapack.lint.nbtCompoundColonSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.nbtCompoundCommaSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.nbtCompoundKeyQuote": [
+        "warning",
+        false
+    ],
+    "datapack.lint.nbtCompoundKeyQuoteType": [
+        "warning",
+        "always double"
+    ],
+    "datapack.lint.nbtCompoundSortKeys": null,
+    "datapack.lint.nbtCompoundTrailingComma": false,
+    "datapack.lint.nbtDoubleOmitSuffix": false,
+    "datapack.lint.nbtDoubleSuffix": "d",
+    "datapack.lint.nbtFloatSuffix": "f",
+    "datapack.lint.nbtListBracketSpacing": {
+        "inside": 0
+    },
+    "datapack.lint.nbtListCommaSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.nbtListLengthCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.nbtListTrailingComma": false,
+    "datapack.lint.nbtLongSuffix": "l",
+    "datapack.lint.nbtPathQuote": [
+        "warning",
+        false
+    ],
+    "datapack.lint.nbtPathQuoteType": [
+        "warning",
+        "always double"
+    ],
+    "datapack.lint.nbtShortSuffix": "s",
+    "datapack.lint.nbtStringQuote": [
+        "warning",
+        true
+    ],
+    "datapack.lint.nbtStringQuoteType": [
+        "warning",
+        "prefer double"
+    ],
+    "datapack.lint.nbtTypeCheck": [
+        "warning",
+        "strictly"
+    ],
+    "datapack.lint.selectorBracketSpacing": {
+        "inside": 0
+    },
+    "datapack.lint.selectorCommaSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.selectorEqualSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.selectorKeyQuote": [
+        "warning",
+        false
+    ],
+    "datapack.lint.selectorKeyQuoteType": null,
+    "datapack.lint.selectorSortKeys": [
+        "warning",
+        [
+            "type",
+            "gamemode",
+            "gamemodeNeg",
+            "team",
+            "teamNeg",
+            "typeNeg",
+            "tag",
+            "tagNeg",
+            "name",
+            "nameNeg",
+            "scores",
+            "advancements",
+            "nbt",
+            "nbtNeg",
+            "predicate",
+            "predicateNeg",
+            "level",
+            "x_rotation",
+            "y_rotation",
+            "distance",
+            "x",
+            "y",
+            "z",
+            "dx",
+            "dy",
+            "dz",
+            "sort",
+            "limit"
+        ]
+    ],
+    "datapack.lint.selectorTrailingComma": false,
+    "datapack.lint.stringQuote": [
+        "warning",
+        true
+    ],
+    "datapack.lint.stringQuoteType": [
+        "warning",
+        "prefer double"
+    ],
+    "datapack.lint.timeOmitTickUnit": false,
     "files.exclude": {
         ".idea": true,
         "**/.classpath": true,

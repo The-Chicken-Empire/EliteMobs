@@ -11,4 +11,3 @@ scoreboard players set #5 constant 5
 function elite_mobs:systems/load
 function elite_mobs:skills/load
 function elite_mobs:tags/load
-function elite_mobs:mobs/elites/zombies/jack/load
