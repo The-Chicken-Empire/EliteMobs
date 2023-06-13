@@ -2,6 +2,7 @@
 
 playsound entity.zombie_villager.converted master @a ~ ~ ~ 1 1 1
 
+
 effect give @e[type=creeper,distance=..3,tag=!EM_elite,tag=!EM_monk_buffed] absorption 15 4 true
 effect give @e[type=creeper,distance=..3,tag=!EM_elite,tag=!EM_monk_buffed] speed 15 2 true
 effect give @e[type=creeper,distance=..3,tag=!EM_elite,tag=!EM_monk_buffed] resistance 15 1 true
@@ -16,6 +17,11 @@ execute as @e[type=creeper,distance=..3,tag=!EM_elite,tag=!EM_monk_buffed] run f
 
 
 
+item replace entity @e[type=creeper,tag=!EM_elite,tag=!EM_monk_buffed,distance=..3] armor.head with iron_helmet{Enchantments:[{id:"minecraft:projectile_protection",lvl:10s}],AttributeModifiers:[{}]}
+execute as @e[type=creeper,tag=!EM_elite,tag=!EM_monk_buffed,distance=..3] at @s run particle witch ~ ~1 ~ 0.2 0.2 0.2 0 100 normal @a
+execute as @e[type=creeper,tag=!EM_elite,tag=!EM_monk_buffed,distance=..3] run data modify entity @s Fuse set value 15
+
+execute as @e[type=creeper,tag=!EM_elite,tag=!EM_monk_buffed,distance=..3] run function elite_mobs:mobs/elites/zombies/monk/buff/tag
 
 
 kill

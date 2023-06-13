@@ -13,7 +13,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Test
-        uses: ChenCMD/datapack-linter@v1
+        uses: The-Chicken-Empire/datapack-linter@main
         with:
           outputDefine: public
           notOutputSuccess: true
