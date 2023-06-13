@@ -10,21 +10,13 @@
     "datapack.env.jsonVersion": "1.19.4",
     "datapack.env.permissionLevel": 2,
     "datapack.features.semanticColoring": false,
-    "datapack.lint.blockStateBracketSpacing": {
-        "inside": 0
+    "files.exclude": {
+        ".idea": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "desktop.ini": true
     },
-    "datapack.lint.blockStateCommaSpacing": {
-        "before": 0,
-        "after": 0
-    },
-    "datapack.lint.blockStateEqualSpacing": {
-        "before": 0,
-        "after": 0
-    },
-    "datapack.lint.blockStateSortKeys": null,
-    "datapack.lint.blockStateTrailingComma": false,
-    "datapack.lint.eol": "LF",
-    "datapack.lint.idOmitDefaultNamespace": null,
     "files.eol": "\n",
     "githubIssues.ignoreUserCompletionTrigger": [
         "mcfunction"
@@ -32,4 +24,24 @@
     "git.branchProtection": [
         "main"
     ],
+    "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
+    "gitmoji.addCustomEmoji": [
+        {
+            "code": ":balance_scale:",
+            "emoji": "⚖️",
+            "description": "Corrections regarding balance adjustment",
+            "description_zh_cn": ""
+        }
+    ],
+    "git-graph.customEmojiShortcodeMappings": [
+        {
+            "shortcode": ":technologist:",
+            "emoji": "🧑‍💻"
+
+        },
+        {
+            "shortcode": ":balance_scale:",
+            "emoji": "⚖️"
+        }
+    ]
 }
