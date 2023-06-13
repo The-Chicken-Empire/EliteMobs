@@ -9,10 +9,10 @@ data modify entity @e[tag=DR_container,limit=1,sort=nearest] ArmorItems set from
 # 変更した部位を取得し、それにあわせて防具立てに格納したデータを適用する
 execute store result score #DR_ DR run data get storage dressup_rod: players[0][0][0][0][0].undo[0].ApplyTo
 execute if score #DR_ DR matches 0 run function dressup_rod:rod/undo/pop/modify_armor
-execute if score #DR_ DR matches 1 run item replace entity @e[tag=DR_container,limit=1,sort=nearest] armor.head from entity @s armor.head
-execute if score #DR_ DR matches 2 run item replace entity @e[tag=DR_container,limit=1,sort=nearest] armor.chest from entity @s armor.chest
-execute if score #DR_ DR matches 3 run item replace entity @e[tag=DR_container,limit=1,sort=nearest] armor.legs from entity @s armor.legs
-execute if score #DR_ DR matches 4 run item replace entity @e[tag=DR_container,limit=1,sort=nearest] armor.feet from entity @s armor.feet
+execute if score #DR_ DR matches 1 run item replace entity @s armor.head from entity @e[tag=DR_container,limit=1,sort=nearest] armor.head 
+execute if score #DR_ DR matches 2 run item replace entity @s armor.chest from entity @e[tag=DR_container,limit=1,sort=nearest] armor.chest
+execute if score #DR_ DR matches 3 run item replace entity @s armor.legs from entity @e[tag=DR_container,limit=1,sort=nearest] armor.legs
+execute if score #DR_ DR matches 4 run item replace entity @s armor.feet from entity @e[tag=DR_container,limit=1,sort=nearest] armor.feet
 
 #防具たてをキル
 kill @e[tag=DR_container]

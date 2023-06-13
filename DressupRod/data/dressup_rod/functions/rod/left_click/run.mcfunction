@@ -30,6 +30,9 @@ tag @e[tag=DR_dc_target] add DR_target
 execute unless score #ModifyCheck DR matches 0 run function dressup_rod:rod/undo/add
 tag @e[tag=DR_target] remove DR_target
 
+# undo処理を行う際に範囲を絞るため、タグを付与しておく
+tag @e[tag=DR_dc_target] add DR_modified
+
 # 使用した防具たてをキル
 kill @e[tag=DR_container]
 
@@ -39,5 +42,3 @@ scoreboard players reset #ModifyCheck DR
 # 対象を特定するタグの除去
 tag @e remove DR_dc_target
 
-# undo処理を行う際に範囲を絞るため、タグを付与しておく
-tag @s add DR_modified

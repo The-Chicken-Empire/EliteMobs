@@ -17,6 +17,9 @@ execute if score #DR_ DR matches 2 run data modify storage dressup_rod: players[
 execute if score #DR_ DR matches 3 run data modify storage dressup_rod: players[0][0][0][0][0].saves[0].ArmorItems[1] set from storage dressup_rod: players[0][0][0][0][0].undo[0].ArmorItems[1]
 execute if score #DR_ DR matches 4 run data modify storage dressup_rod: players[0][0][0][0][0].saves[0].ArmorItems[0] set from storage dressup_rod: players[0][0][0][0][0].undo[0].ArmorItems[0]
 
+# undo[0].ArmorItemsが存在しない場合（操作によって新しくセーブデータが作られた場合が当てはまるセーブデータを削除する）
+execute unless data storage dressup_rod: players[0][0][0][0][0].undo[0].ArmorItems run data remove storage dressup_rod: players[0][0][0][0][0].saves[0]
+
 #プレイヤのDR_savesの値を元に戻す
 scoreboard players operation @s DR_saves >< #undo_modifiedstorage DR
 

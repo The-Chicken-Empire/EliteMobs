@@ -26,7 +26,7 @@ execute unless score @s DR_mode matches 5 store result storage dressup_rod: play
 execute unless score @s DR_mode matches 5 run data modify storage dressup_rod: players[0][0][0][0][0].undo[0].IsEntity set value 1
 
 # DR_undo_containerタグのついたarmor_standに変更前のデータが保存されているので、ArmorItemsのデータをストレージに保存
-data modify storage dressup_rod: players[0][0][0][0][0].undo[0].ArmorItems set from entity @e[tag=DR_undo_container,limit=1] ArmorItems
+execute if entity @e[tag=DR_undo_container,limit=1] run data modify storage dressup_rod: players[0][0][0][0][0].undo[0].ArmorItems set from entity @e[tag=DR_undo_container,limit=1] ArmorItems
 
 # 最大保存数を超えた時に一番古い履歴を削除
 execute store result score #DR DR run data get storage dressup_rod: players[0][0][0][0][0].undo
