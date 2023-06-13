@@ -10,7 +10,7 @@ execute as @e[tag=EM_sniper_shoot,limit=1,sort=nearest] at @s facing entity @a[t
 execute run data modify entity @e[tag=EM_target,limit=1,sort=nearest] Motion set from entity @e[tag=EM_sniper_shoot,limit=1] Pos
 kill @e[tag=EM_sniper_shoot]
 
-execute at @s run playsound minecraft:entity.generic.explode master @a[distance=..150] ~ ~ ~ 0.1 1.5 0.1
+execute at @s run playsound minecraft:entity.generic.explode master @a[distance=..150] ~ ~ ~ 1 1.5 1
 effect give @s glowing 5 0 true
 
 tag @e[tag=EM_target] remove EM_target
