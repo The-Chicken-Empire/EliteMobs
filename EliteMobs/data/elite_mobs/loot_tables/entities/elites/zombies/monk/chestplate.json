@@ -5,11 +5,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_chestplate",
+          "name": "minecraft:leather_chestplate",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Trim:{material:\"minecraft:redstone\",pattern:\"minecraft:dune\"}}"
+              "tag": "{Trim:{material:\"minecraft:diamond\",pattern:\"minecraft:dune\"},display:{color:11289023}}"
             }
           ]
         }
