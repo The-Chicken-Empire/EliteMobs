@@ -1,6 +1,8 @@
 #> dressup_rod:rod/left_click/save/apply
 # 
-# @within dressup_rod:rod/*
+# @within
+#		dressup_rod:rod/left_click/check_target
+#		dressup_rod:rod/drop/run
 
 
 # 関数を利用する対象にタグ付け

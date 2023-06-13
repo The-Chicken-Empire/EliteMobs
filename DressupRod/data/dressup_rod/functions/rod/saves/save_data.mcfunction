@@ -1,6 +1,6 @@
 #> dressup_rod:rod/saves/save_data 
 #
-# @within dressup_rod:rod/*
+# @within dressup_rod:rod/**
 
 # 変更結果をsavesに入れる。dressup_rod:rod/undo/addと一緒に使用すると考えているので、
 # もし使わない場合はkill @e[tag=DR_undo_container] を使用しておくこと

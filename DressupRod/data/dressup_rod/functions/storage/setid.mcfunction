@@ -1,6 +1,6 @@
 #> dressup_rod:storage/setid
 #
-# @within dressup_rod:*
+# @within dressup_rod:**
 
 # ストレージの割り当てをしていないプレイヤに割り当てを行う
 scoreboard players operation @s DR_storageID = #DR DR_storageID

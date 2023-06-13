@@ -3,7 +3,7 @@
 # @within dressup_rod:tick
 
 # rod関係のプレイヤスコアが未設定なら初期値を設定する
-scoreboard players set @s DR_rod_condition 0
+scoreboard players set @s DR_mode 0
 scoreboard players set @s DR_apply_to 0
 scoreboard players set @s DR_pattern 0
 scoreboard players set @s DR_material 0

@@ -1,6 +1,6 @@
 #> dressup_rod:rod/undo/add
 #
-# @within dressup_rod:rod/*
+# @within dressup_rod:rod/**
 
 # 実行者の個別ストレージのundoの先頭に履歴を保存し最大保存数を超えた履歴は削除する
 # 保存内容は、1.どの部位の変更だったか(ApplyTo : 0~4) , 2.エンティティに対する変更であったのか(IsEntity : 1or0) , 3.変更前はどんな装備だったか(ArmorItems:[{},{},{},{}]) , 4.変更対象のUUID[0] or ストレージ番号 (Identifier : (uuid) or 0~15)
@@ -15,12 +15,12 @@ data modify storage dressup_rod: players[0][0][0][0][0].undo prepend value {}
 execute store result storage dressup_rod: players[0][0][0][0][0].undo[0].ApplyTo int 1 run scoreboard players get @s DR_apply_to
 
 # ロッドがsaveモードであったならばストレージに対する変更であるので、ストレージ番号を保存しIsEntityを0に設定
-execute if score @s DR_rod_condition matches 5 store result storage dressup_rod: players[0][0][0][0][0].undo[0].Identifier int 1 run scoreboard players get @s DR_saves
-execute if score @s DR_rod_condition matches 5 run data modify storage dressup_rod: players[0][0][0][0][0].undo[0].IsEntity set value 0
+execute if score @s DR_mode matches 5 store result storage dressup_rod: players[0][0][0][0][0].undo[0].Identifier int 1 run scoreboard players get @s DR_saves
+execute if score @s DR_mode matches 5 run data modify storage dressup_rod: players[0][0][0][0][0].undo[0].IsEntity set value 0
 
 #それ以外のモードではエンティティに対する変更であるので、UUID[0]を保存し、IsEntityを1に設定
-execute unless score @s DR_rod_condition matches 5 store result storage dressup_rod: players[0][0][0][0][0].undo[0].Identifier int 1 run data get entity @e[tag=DR_target,limit=1] UUID[0]
-execute unless score @s DR_rod_condition matches 5 run data modify storage dressup_rod: players[0][0][0][0][0].undo[0].IsEntity set value 1
+execute unless score @s DR_mode matches 5 store result storage dressup_rod: players[0][0][0][0][0].undo[0].Identifier int 1 run data get entity @e[tag=DR_target,limit=1] UUID[0]
+execute unless score @s DR_mode matches 5 run data modify storage dressup_rod: players[0][0][0][0][0].undo[0].IsEntity set value 1
 
 # DR_undo_containerタグのついたarmor_standに変更前のデータが保存されているので、ArmorItemsのデータをストレージに保存
 data modify storage dressup_rod: players[0][0][0][0][0].undo[0].ArmorItems set from entity @e[tag=DR_undo_container,limit=1] ArmorItems

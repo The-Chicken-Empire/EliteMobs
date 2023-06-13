@@ -1,6 +1,6 @@
 #> dressup_rod:rod/saves/save_data/feet
 # 
-# @within dressup_rod:rod/saves/*
+# @within dressup_rod:rod/saves/**
 
 #防具たてにデータを一時的に保存
 item replace entity @s armor.feet from entity @e[tag=DR_target,limit=1,sort=nearest] armor.feet

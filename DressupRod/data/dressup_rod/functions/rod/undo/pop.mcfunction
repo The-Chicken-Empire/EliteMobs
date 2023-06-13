@@ -1,6 +1,6 @@
 #> dressup_rod:rod/undo/pop
 #
-# @within dressup_rod:rod/*
+# @within dressup_rod:rod/**
 
 # undoストレージの先頭に入っている情報から前回の変更を調べ、変更を元に戻す
 
@@ -12,4 +12,5 @@ execute unless data storage dressup_rod: players[0][0][0][0][0].undo[0] run func
 
 # undoストレージ内に要素が入っていなければ、実行者にDR_undo_nodataタグを付与
 execute unless data storage dressup_rod: players[0][0][0][0][0].undo[0] run tag @s add DR_undo_nodata
+
 

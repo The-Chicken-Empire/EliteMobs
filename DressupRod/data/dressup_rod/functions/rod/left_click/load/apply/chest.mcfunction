@@ -1,6 +1,6 @@
 #> dressup_rod:rod/left_click/load/apply/chest
 # 
-# @within dressup_rod:rod/left_click/load/*
+# @within dressup_rod:rod/left_click/load/**
 
 #防具たてにデータを一時的に保存
 data modify entity @s ArmorItems[2] set from storage dressup_rod: players[0][0][0][0][0].saves[0].ArmorItems[2]

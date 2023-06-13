@@ -1,6 +1,6 @@
 #> dressup_rod:rod/check/check_dropper
 #
-# @within dressup_rod:*
+# @within dressup_rod:**
 
 
 execute store result score #DR DR run data get entity @s Thrower[0]

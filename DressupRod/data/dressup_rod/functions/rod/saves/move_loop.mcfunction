@@ -1,6 +1,6 @@
 #> dressup_rod:rod/saves/move_loop
 #
-# @within dressup_rod:rod/*
+# @within dressup_rod:rod/**
 
 # 先頭データを一番最後に移動させ、新しい先頭データの値も違えば再度呼び出し
 scoreboard players remove #move DR 1

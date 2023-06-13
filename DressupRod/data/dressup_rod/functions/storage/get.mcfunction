@@ -1,6 +1,6 @@
 #> dressup_rod:storage/get
 #
-# @within dressup_rod:*
+# @within dressup_rod:**
 
 # 実行者のストレージが先頭にくるようにストレージ dressup_rod: players[4][4][4][4][4] を動かす
 

@@ -2,8 +2,19 @@
 #
 # @within dressup_rod:load
 
+#> 
+#	dressup_rodに関する全データを保存しているストレージ。
+# 使用しているパスはtmp,players
+# playersはプレイヤごとの個別データの保存用であり、undo用のストレージundoとloadやsave用のストレージsavesを持っている
+# @within dressup_rod:**
+#define storage dressup_rod: 
+
 # 個別ストレージのID
-scoreboard objectives add DR_storageID dummy
+#>
+# 個別ストレージ番号
+# @within dressup_rod:**
+	scoreboard objectives add DR_storageID dummy
+
 scoreboard players set #DR DR_storageID 0
 
 # 要素数1024の5次元配列 dressup_rod: players[0][0][0][0][0]が先頭になる

@@ -1,6 +1,6 @@
 #> dressup_rod:rod/left_click/load/apply
 #
-# @within dressup_rod:rod/left_click/*
+# @within dressup_rod:rod/left_click/**
 
 # プレイヤのDR_savesの値とidが等しいデータがdressup_rod: players[0][0][0][0][0].saves[0]にくるように移動。なければ作成
 function dressup_rod:rod/saves/move

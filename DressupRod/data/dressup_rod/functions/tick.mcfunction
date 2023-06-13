@@ -16,7 +16,10 @@ execute as @a[tag=DR_drop] run function dressup_rod:rod/drop
 # 視線を向けられていることを示すタグを消去
 tag @e[tag=DR_targeted] remove DR_targeted
 
+# ロッドを持っていることを示すタグを消去
 tag @a remove DR_select_rod
+
+# ロッドを捨てたことの検知に使ったタグを消去
 tag @a remove DR_drop
 
 # 操作記録エンティティをkill

@@ -1,6 +1,6 @@
 #> dressup_rod:rod/left_click/pattern/search/spire
 #
-# dressup_rod:rod/left_click/pattern/search/*
+# dressup_rod:rod/left_click/pattern/search/**
 
 execute if score @s DR_apply_to matches 0 as @e[tag=DR_dc_target,limit=1] run function dressup_rod:apply/armor/trim/pattern/spire
 execute if score @s DR_apply_to matches 1 as @e[tag=DR_dc_target,limit=1] run function dressup_rod:apply/head/trim/pattern/spire

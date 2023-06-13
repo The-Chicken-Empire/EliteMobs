@@ -1,6 +1,6 @@
 #> dressup_rod:rod/saves/move
 #
-# @within dressup_rod:rod/*
+# @within dressup_rod:rod/**
 
 # 個別ストレージの呼び出し
 function dressup_rod:storage/get

@@ -1,6 +1,6 @@
 #> dressup_rod:storage/restore
 #
-# @within dressup_rod:storage/*
+# @within dressup_rod:storage/**
 
 # 動かした配列を元の整列済みの状態まで戻す
 
