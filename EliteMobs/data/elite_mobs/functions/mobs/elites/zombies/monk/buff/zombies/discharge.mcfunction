@@ -11,8 +11,8 @@ effect give @e[type=zombie,distance=..3,tag=!EM_elite,tag=!EM_monk_buffed] fire_
 execute as @e[type=zombie,distance=..3,tag=!EM_elite,tag=!EM_monk_buffed] at @s run particle witch ~ ~1 ~ 0.2 0.2 0.2 0 100 normal @a
 
 
-tag @e[type=zombie,distance=..3,tag=!EM_elite,tag=!EM_monk_buffed] add EM_monk_buffed
-tag @e[type=zombie,distance=..3,tag=!EM_elite,tag=!EM_monk_buffed] add EM_elite
+execute as @e[type=zombie,distance=..3,tag=!EM_elite,tag=!EM_monk_buffed] run function elite_mobs:mobs/elites/zombies/monk/buff/tag
+
 
 
 
