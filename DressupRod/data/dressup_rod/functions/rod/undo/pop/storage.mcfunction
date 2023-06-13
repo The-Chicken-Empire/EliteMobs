@@ -3,7 +3,7 @@
 # @within dressup_rod:rod/undo/pop/run
 
 # まず、現在のプレイヤのDR_savesの値を保存し、代わりに元に戻すストレージの番号を代入する
-scoreboard players operation #undo_modifiedstorage DR = @s DR_storageID
+scoreboard players operation #undo_modifiedstorage DR = @s DR_saves
 execute store result score @s DR_saves run data get storage dressup_rod: players[0][0][0][0][0].undo[0].Identifier
 
 # プレイヤのDR_savesの値とidが等しいデータがdressup_rod: players[0][0][0][0][0].saves[0]にくるように移動。
