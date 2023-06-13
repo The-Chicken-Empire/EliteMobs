@@ -1,5 +1,7 @@
 #> dressup_rod:rod/saves/save_data 
 #
+#	@output entity armor_stand (tag=DR_undo_container,it has ArmorItems nbt data)
+#	@output score #save_result DR (success : 1 , failure : 0)
 # @within dressup_rod:rod/**
 
 # 変更結果をsavesに入れる。dressup_rod:rod/undo/addと一緒に使用すると考えているので、
@@ -24,7 +26,7 @@ summon armor_stand ~ ~-10000 ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:[
 data modify entity @e[tag=DR_undo_container,limit=1,sort=nearest] ArmorItems set from storage dressup_rod tmp.ArmorItems
 
 #dataが変更されたのかを調べる
-execute store success score #success DR run data modify storage dressup_rod tmp set from storage dressup_rod: players[0][0][0][0][0].saves[0]
+execute store success score #save_result DR run data modify storage dressup_rod tmp set from storage dressup_rod: players[0][0][0][0][0].saves[0]
 
 
 

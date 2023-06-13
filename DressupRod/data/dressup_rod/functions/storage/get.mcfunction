@@ -1,8 +1,7 @@
 #> dressup_rod:storage/get
-#
+#	実行者のストレージが先頭にくるようにstorage dressup_rod: players[4][4][4][4][4] を動かす
+# この関数の実行後にstorage dressup_rod: players[0][0][0][0][0]にアクセスすることで個別のデータを取り出せる
 # @within dressup_rod:**
-
-# 実行者のストレージが先頭にくるようにストレージ dressup_rod: players[4][4][4][4][4] を動かす
 
 # まず前回動かしたストレージを元の整列済みの状態に戻す
 function dressup_rod:storage/restore

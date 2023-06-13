@@ -1,5 +1,8 @@
 #> dressup_rod:rod/undo/add
 #
+#	@output score #undo_result 
+# @reads data entity @e[tag=tag=DR_undo_container] ArmorItems
+#
 # @within dressup_rod:rod/**
 
 # 実行者の個別ストレージのundoの先頭に履歴を保存し最大保存数を超えた履歴は削除する
