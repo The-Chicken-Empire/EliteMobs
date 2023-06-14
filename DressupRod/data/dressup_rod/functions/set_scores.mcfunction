@@ -18,7 +18,7 @@ scoreboard players set #max DR_color 15
 scoreboard players set #max DR_itemid 5
 scoreboard players set #max DR_enchant 1
 scoreboard players set #max DR_saves 15
-scoreboard players set #max DR_history 10
+scoreboard players set #max DR_history 30
 
 #ロッドのリーチを設定
 scoreboard players set #dc_distance DR 10

@@ -1,3 +1,7 @@
+#> dressup_rod:apply/armor/trim/patternquartz
+#
+#> @within dressup_rod:rod/left_click/**
+
 item modify entity @s armor.head dressup_rod:trim/material/quartz
 item modify entity @s armor.chest dressup_rod:trim/material/quartz
 item modify entity @s armor.legs dressup_rod:trim/material/quartz

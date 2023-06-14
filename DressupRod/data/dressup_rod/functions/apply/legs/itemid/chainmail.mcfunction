@@ -1,3 +1,7 @@
+#> dressup_rod:apply/legs/itemid/chainmail
+#
+#> @within dressup_rod:rod/left_click/**
+
 summon armor_stand ~ ~-10000 ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["DR_container"]}
 
 item replace entity @e[tag=DR_container,type=armor_stand,limit=1,sort=nearest] armor.legs from entity @s armor.legs
