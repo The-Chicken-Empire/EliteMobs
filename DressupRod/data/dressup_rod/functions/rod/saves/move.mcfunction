@@ -25,9 +25,6 @@ execute if score #size DR matches 2.. unless score #check DR = @s DR_saves if sc
 # 同じなら#saves_move_result DRを1に変更
 execute if score #size DR matches 1.. store result score #check DR run data get storage dressup_rod: players[0][0][0][0][0].saves[0].id
 execute if score #size DR matches 1.. unless score #check DR = @s DR_saves run scoreboard players set #saves_move_result DR 0
-execute if score #check DR = @s DR_saves run say yes1
-execute unless score #check DR = @s DR_saves run say yes2
-
 
 # スコアをリセット
 scoreboard players reset #move DR

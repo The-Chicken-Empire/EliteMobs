@@ -6,7 +6,7 @@
 data modify entity @s ArmorItems[2] set from storage dressup_rod: players[0][0][0][0][0].saves[0].ArmorItems[2]
 
 #対象のデータを変更
-item replace entity @e[tag=DR_dc_target,limit=1,sort=nearest] armor.chest from entity @s armor.chest
+item replace entity @e[tag=DR_dc_target,sort=nearest,limit=1] armor.chest from entity @s armor.chest
 
 #防具たてをキル
 kill @s

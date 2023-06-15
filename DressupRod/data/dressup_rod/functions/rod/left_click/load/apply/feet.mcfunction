@@ -6,7 +6,7 @@
 data modify entity @s ArmorItems[0] set from storage dressup_rod: players[0][0][0][0][0].saves[0].ArmorItems[0]
 
 #対象のデータを変更
-item replace entity @e[tag=DR_dc_target,limit=1,sort=nearest] armor.feet from entity @s armor.feet
+item replace entity @e[tag=DR_dc_target,sort=nearest,limit=1] armor.feet from entity @s armor.feet
 
 #防具たてをキル
 kill @s

@@ -42,4 +42,7 @@ scoreboard players set #256 DR 256
 # ストレージの初期化が行われていなければ初期化
 execute unless data storage dressup_rod: players run function dressup_rod:storage/init
 
+# テキストストレージの初期化が行われていなければ初期化
+execute unless data storage dressup_rod: texts run function dressup_rod:rod/texts/init_texts
+
 

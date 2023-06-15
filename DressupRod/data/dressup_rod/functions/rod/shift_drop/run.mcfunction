@@ -5,10 +5,9 @@
 # undo操作を行う
 function dressup_rod:rod/undo/pop
 
-# undoの結果に応じてアクションバーに表示を行う
-execute if score #undo_result DR matches 0 run say 成功
-execute if score #undo_result DR matches 1 run say 履歴が存在しません
-execute if score #undo_result DR matches 2 run say 対象が存在しません
-
-
-tellraw @s {"score":{"name":"#modifiedstorage","objective":"DR"}}
+# undoの結果に応じてアクションバーに表示を行い、音を鳴らす
+execute if score #undo_result DR matches 0 run title @s actionbar {"text":"undo succeeded"}
+execute if score #undo_result DR matches 1 run title @s actionbar {"text":"There is no history"}
+execute if score #undo_result DR matches 1 run playsound minecraft:entity.generic.extinguish_fire master @s ~ ~ ~ 1 2 1
+execute if score #undo_result DR matches 2 run title @s actionbar {"text":"There are no target"}
+execute if score #undo_result DR matches 2 run playsound minecraft:entity.villager.no master @s ~ ~ ~ 1 1 1
