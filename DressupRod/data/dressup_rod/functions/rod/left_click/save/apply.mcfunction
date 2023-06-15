@@ -11,8 +11,9 @@ tag @e[tag=DR_dc_target] add DR_target
 # 実際にストレージにデータを保存する。この際、dressup_rod:rod/undo/addに利用するDR_undo_containerも作成されている。
 function dressup_rod:rod/saves/save_data
 
-# 変更に成功していれば、変更履歴を保存する
+# 変更に成功していれば、変更履歴を保存し、音を鳴らす
 execute unless score #save_result DR matches 0 run function dressup_rod:rod/undo/add
+execute unless score #save_result DR matches 0 run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 2 1
 
 #変更に成功していなければ、失敗音を鳴らす
 execute if score #save_result DR matches 0 run playsound minecraft:entity.villager.no master @s ~ ~ ~ 1 1 1

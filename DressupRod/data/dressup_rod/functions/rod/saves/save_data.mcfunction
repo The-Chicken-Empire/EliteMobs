@@ -28,5 +28,6 @@ execute if score @s DR_apply_to matches 4 as @e[tag=DR_container,sort=nearest,li
 execute if score #saves_move_result DR matches 1 run summon armor_stand ~ ~-10000 ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["DR_undo_container"]}
 execute if score #saves_move_result DR matches 1 run data modify entity @e[tag=DR_undo_container,sort=nearest,limit=1] ArmorItems set from storage dressup_rod tmp.ArmorItems
 
-# dataが変更されたのかを調べる
+# dataが変更されたのかを調べる。新しく保存先を作成した場合に限り強制的に成功(1)にする
 execute store success score #save_result DR run data modify storage dressup_rod tmp set from storage dressup_rod: players[0][0][0][0][0].saves[0]
+execute if score #saves_move_result DR matches 0 run scoreboard players set #save_result DR 1
