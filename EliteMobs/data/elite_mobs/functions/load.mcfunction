@@ -9,6 +9,8 @@ scoreboard players set #3 constant 3
 scoreboard players set #4 constant 5
 scoreboard players set #5 constant 5
 
+forceload add 12 12 -12 -12
+
 function elite_mobs:systems/load
 function elite_mobs:skills/load
 function elite_mobs:tags/load

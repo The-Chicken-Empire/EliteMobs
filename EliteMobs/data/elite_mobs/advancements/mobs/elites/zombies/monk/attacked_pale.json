@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "source_entity": {
+            "nbt": "{Tags:[\"EM_monk_alone\"]}",
+            "equipment": {
+              "head": {
+                "items": [
+                  "minecraft:leather_helmet"
+                ],
+                "nbt": "{Trim:{material:\"minecraft:lapis\",pattern:\"minecraft:dune\"}}"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "elite_mobs:mobs/elites/zombies/monk/selfbuff/serum/pale_serum/attack"
+  }
+}

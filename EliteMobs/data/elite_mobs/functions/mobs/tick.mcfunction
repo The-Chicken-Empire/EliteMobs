@@ -7,6 +7,7 @@ function elite_mobs:mobs/elites/skeletons/allrounder/tick
 function elite_mobs:mobs/elites/spiders/kimoino/tick
 function elite_mobs:mobs/elites/wolfs/berosuberosu/tick
 
+function elite_mobs:mobs/elites/zombies/monk/tick
 execute as @e[tag=EM_sniper] run function elite_mobs:mobs/elites/skeletons/sniper/tick
 
 scoreboard players add @e[tag=EM_mobs_hasskill] EM_mobs_counter 1
