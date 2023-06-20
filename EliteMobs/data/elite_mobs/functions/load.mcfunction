@@ -1,6 +1,4 @@
 #>elite_mobs:load
-#
-
 
 forceload add 0 0
 

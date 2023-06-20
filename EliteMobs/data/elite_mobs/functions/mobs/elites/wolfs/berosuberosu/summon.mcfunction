@@ -1,0 +1,3 @@
+#>elite_mobs:mobs/elites/wolfs/berosuberosu/summon
+
+summon wolf ~ ~ ~ {Health:20f,Tags:["EM_elite","EM_berosuberosu"],Passengers:[{id:"minecraft:wolf",Health:40f,Tags:["EM_elite","EM_berosuberosu"],CustomName:'{"text":"ベロスべロス"}',Attributes:[{Name:"generic.max_health",Base:40d},{Name:"generic.movement_speed",Base:0.5},{Name:"generic.attack_damage",Base:12d}]}],CustomName:'{"text":"ベロスべロス"}',Attributes:[{Name:"generic.max_health",Base:20d},{Name:"generic.movement_speed",Base:0.5},{Name:"generic.attack_damage",Base:7d}]}
