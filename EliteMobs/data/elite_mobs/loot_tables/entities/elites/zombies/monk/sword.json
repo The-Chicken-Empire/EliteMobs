@@ -1,0 +1,36 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:wooden_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "name": "",
+                    "amount": -2.99,
+                    "operation": "addition",
+                    "slot": "mainhand"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_enchantments",
+                "enchantments": {
+                  "minecraft:knockback": 1,
+                  "minecraft:fire_aspect" :3
+                },
+                "add": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

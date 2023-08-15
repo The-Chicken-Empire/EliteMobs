@@ -10,13 +10,6 @@
     "datapack.env.jsonVersion": "1.19.4",
     "datapack.env.permissionLevel": 2,
     "datapack.features.semanticColoring": false,
-    "files.exclude": {
-        ".idea": true,
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "desktop.ini": true
-    },
     "datapack.lint.blockStateCommaSpacing": {
         "before": 0,
         "after": 0
